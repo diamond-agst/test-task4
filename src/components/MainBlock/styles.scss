@@ -1,0 +1,24 @@
+.mainBlock{
+    display: flex;
+    justify-content: center;
+    margin-top: 60px;
+    div{
+        display: flex;
+        align-items: center;
+        img{
+            margin-right: 30px;
+        }
+        p{
+            font-family: '5ka Sans Design';
+            font-style: normal;
+            font-weight: 900;
+            font-size: 32px;
+            line-height: 38px;
+            letter-spacing: -0.04em;
+            background: linear-gradient(135deg, #EB4023 7.2%, #FF8807 100.7%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+    }
+}

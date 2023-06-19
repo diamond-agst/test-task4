@@ -1,0 +1,16 @@
+.header{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    padding-top: 60px;
+    padding-top: 60px;
+    .yellowLeaf{
+        position: absolute;
+        left: 10%;
+    }
+    .seed{
+        position: absolute;
+        right: 10%;
+        bottom: -100px;
+    }
+}

@@ -1,0 +1,117 @@
+.promoContainer{
+    display: flex;
+    justify-content: center;
+    margin-top: 180px;
+    padding-bottom: 26px;
+    overflow: hidden;
+    .promoContent{
+        background: #00923A;
+        border-radius: 20px;
+        padding: 16px 0px;
+        width: 430px;
+        & > p{
+            font-family: '5ka Sans Design';
+            font-style: normal;
+            font-weight: 900;
+            font-size: 32px;
+            line-height: 38px;
+            text-align: center;
+            color: #FFFFFF;
+        }
+        .promocode{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-top: 24px;
+            p{
+                font-family: '5ka Sans Design';
+                font-style: normal;
+                font-weight: 900;
+                font-size: 40px;
+                line-height: 48px;
+                text-align: center;
+                color: #FFFFFF;
+                margin-right: 13px;
+            }
+        }
+    }
+    .appBlock{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-top: 56px;
+        h1{
+            font-family: '5ka Sans Design';
+            font-style: normal;
+            font-weight: 900;
+            font-size: 32px;
+            line-height: 89.02%;
+            text-align: center;
+            color: #582D2B;
+        }
+    }
+    .staticYellowLeaf{
+        position: absolute;
+        left: 60px;
+        top: 30%;
+        transform: rotate(-90deg);
+    }
+    .staticBrownLeaf{
+        position: absolute;
+        left: 180px;
+        top: 40%;
+    }
+    .staticRedLeaf{
+        position: absolute;
+        left: 180px;
+        top: 60%;
+        transform: rotate(90deg);
+        transform: scale(1.2);
+    }
+    .staticRedLeaf2{
+        position: absolute;
+        left: -50px;
+        bottom: -100px;
+        transform: rotate(180deg);
+    }
+    .staticOrangeLeaf{
+        position: absolute;
+        left: -100px;
+        top: 50%;
+        transform: rotate(90deg);
+    }
+    .staticSeed{
+        position: absolute;
+        left: 220px;
+        bottom: 10%;
+        transform: rotate(180deg);
+    }
+    .staticYellowLeaf2{
+        position: absolute;
+        right: 250px;
+        bottom: 20%;
+        transform: rotate(180deg);
+    }
+    .staticBrownLeaf2{
+        position: absolute;
+        right: 250px;
+        bottom: 30%;
+        transform: rotate(90deg);
+    }
+    .staticGreenLeaf2{
+        position: absolute;
+        right: -120px;
+        bottom: 0;
+        transform: rotate(-120deg);
+    }
+    .staticGreenLeaf{
+        position: absolute;
+        right: 120px;
+        bottom: -100px;
+    }
+    .staticRed2Leaf2{
+        position: absolute;
+        right: 120px;
+        bottom: -100px;
+    }
+}
