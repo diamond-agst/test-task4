@@ -40,6 +40,11 @@
         flex-direction: column;
         align-items: center;
         margin-top: 56px;
+        
+        img{
+            animation: tilt-shaking 5s infinite; 
+            cursor: pointer; 
+        }
         h1{
             font-family: '5ka Sans Design';
             font-style: normal;
@@ -48,6 +53,16 @@
             line-height: 89.02%;
             text-align: center;
             color: #582D2B;
+        }
+        @keyframes tilt-shaking {
+            1% {transform: rotate(10deg);}
+            3%{transform: rotate(-10deg);}
+            5% {transform: rotate(10deg);}
+            7%{transform: rotate(-10deg);}
+            9% {transform: rotate(10deg);}
+            11% {transform: rotate(-10deg);}
+            13% {transform: rotate(0deg);}
+            11% {transform: rotate(0deg);}
         }
     }
     .staticYellowLeaf{
@@ -113,5 +128,59 @@
         position: absolute;
         right: 120px;
         bottom: -100px;
+    }
+}
+
+@media screen and (max-width: 1300px) {
+    .staticBrownLeaf2{
+        display: none;
+    }
+}
+
+@media screen and (max-width: 1170px) {
+    .staticBrownLeaf, .staticRedLeaf, .staticGreenLeaf{
+        display: none;
+    }
+}
+
+@media screen and (max-width: 960px) {
+    .promoContainer{
+        margin-top: 100px !important;
+    }
+    .staticYellowLeaf, .staticYellowLeaf2{
+        display: none;
+    }
+}
+
+@media screen and (max-width: 900px) {
+    .staticRed2Leaf2, .staticSeed{
+        display: none;
+    }
+}
+
+@media screen and (max-width: 670px) {
+    .staticGreenLeaf2, .staticRedLeaf2, .staticOrangeLeaf{
+        display: none;
+    }
+}
+
+@media screen and (max-width: 540px) {
+    .staticOrangeLeaf{
+        display: none;
+    }
+    .promoContainer{
+        margin-top: 50px !important;
+        .promoBlock{
+            margin: 0px 16px;
+        }
+        .promoBlock, .promoContent{
+            width: 100% !important;
+        }
+        .promocode{
+            margin-top: 16px !important;
+            p{
+                font-size: 34px !important;
+            }
+        }
     }
 }

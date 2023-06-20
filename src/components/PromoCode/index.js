@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
 import iconCopy from "../../assets/images/icon-copy.svg"
 import app from "../../assets/images/app.svg"
 import "./styles.scss"
@@ -13,18 +13,29 @@ import greenLeaf from "../../assets/images/green-leaf.png"
 import seed from "../../assets/images/seed.png"
 
 const PromoCode = () => {
+    const[promo, setPromo] = useState(JSON.parse(localStorage.getItem('promo')))
+    useEffect(() => {
+        if(!promo){
+            const N = 9999;
+            const arr = [...Array(N).keys()].map(x => ++x);
+            let rand = Math.floor(Math.random() * arr.length);
+            localStorage.setItem('promo', JSON.stringify(rand));
+        }
+      }, []);
+    
+    console.log(promo)
     return(
         <div className="promoContainer">
             <div className="promoBlock">
                 <div className="promoContent">
                     <p>Ваш промокод</p>
                     <div className="promocode">
-                        <p>AMW18891</p>
+                        <p>{`PROMO${promo}`}</p>
                         <img src={iconCopy}/>
                     </div>
                 </div>
                 <div className="appBlock">
-                    <img src={app}/>
+                    <img className="imgAppPromo" src={app}/>
                     <h1>Скачать<br/> приложение</h1>
                 </div>
             </div>

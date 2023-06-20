@@ -22,3 +22,30 @@
         }
     }
 }
+
+@media screen and (max-width: 960px) {
+    .mainBlock{
+        div{
+            flex-direction: column;
+            img{
+                margin-bottom: 25px;
+                margin-right: 0px !important;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 550px) {
+    .mainBlock{
+        div{
+            margin: 0px 16px;
+            img{
+                width: 260px;
+            }
+            p{
+                font-size: 26px;
+                line-height: 29px;
+            }
+        }
+    }
+}

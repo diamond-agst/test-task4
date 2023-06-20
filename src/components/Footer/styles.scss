@@ -1,0 +1,25 @@
+.footer{
+    background: #FFF7EA;
+    display: flex;
+    justify-content: center;
+    .footerText{
+        padding: 12px 0px;
+        p{
+            font-family: '5ka Sans Design';
+            font-style: normal;
+            font-weight: 400;
+            font-size: 9px;
+            line-height: 11px;
+            letter-spacing: -0.04em;
+            color: #000000;
+        }
+    }
+}
+  
+
+  
+@media screen and (max-width: 750px) {
+    .footerText{
+      margin: 0px 16px;
+    }
+  }
